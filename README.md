@@ -38,6 +38,12 @@ library(webmorphR)
 #> Welcome to webmorphR. For support and examples visit:
 #> https://debruine.github.io/webmorphR/
 #> ************
+library(webmorphR.dlib)
+#> 
+#> Attaching package: 'webmorphR.dlib'
+#> The following object is masked from 'package:webmorphR':
+#> 
+#>     auto_delin
 
 # load demo images and delineate
 stim_70_point <- demo_stim() |> 
@@ -61,6 +67,9 @@ The `auto_delin()` function will load the required python modules. If
 you get errors about that, you may need to install cmake and dlib first.
 I found these instructions useful for [dlib installation on a
 mac](https://stackoverflow.com/questions/54719496/how-to-install-dlib-for-python-on-mac).
+
+If you get an error about PIL, try running
+`reticulate::py_install("Pillow")`.
 
 ## Templates
 
