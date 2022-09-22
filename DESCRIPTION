@@ -1,7 +1,7 @@
 Package: webmorphR.dlib
 Title: Face Detection for webmorphR
-Date: 2022-05-27
-Version: 0.0.0.9003
+Date: 2022-09-22
+Version: 0.0.0.9004
 Authors@R: 
     person(
         given = "Lisa", 

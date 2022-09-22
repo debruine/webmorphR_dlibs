@@ -1,4 +1,4 @@
-import PIL.Image
+from PIL import Image
 import dlib
 import numpy as np
 
@@ -11,7 +11,7 @@ def py_get_points(file, pred_file):
   pose_predictor = dlib.shape_predictor(pred_file)
   
   # load image 
-  im = PIL.Image.open(file).convert("RGB")
+  im = Image.open(file).convert("RGB")
   face_image = np.array(im)
   
   # detect face
@@ -26,7 +26,7 @@ def py_get_points(file, pred_file):
 
 def py_get_location(file):
   # load image 
-  im = PIL.Image.open(file).convert("RGB")
+  im = Image.open(file).convert("RGB")
   face_image = np.array(im)
   
   # detect face
